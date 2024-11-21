@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .form__title {
+        margin-bottom: 20px;
+    }
+
+    .form__inputs {
+        padding: 10px 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+
+        .feedback__input {
+            border: none;
+        }
+        
+        .feedback__input:focus {
+            outline: none;
+
+        }
+    }
+}

@@ -2,7 +2,8 @@ import Header from './components/Header'
 import FeedbackItems from './components/FeedbackItems';
 import feedbackData from './data/FeedbackData';
 import { useState } from 'react';
-import Card from './components/shared/Card'
+import Stats from './components/Stats';
+import FeedbackForm from './components/FeedbackForm';
 
 function App() {
   const [feedback, setFeedback] = useState(feedbackData)
@@ -20,6 +21,8 @@ function App() {
     <div className="App">
       <Header />
       <div className="container">
+        <FeedbackForm />
+        <Stats feedback={feedback} />
         <FeedbackItems feedback={feedback} handleDelete={handleDelete} />
       </div>
     </div>
