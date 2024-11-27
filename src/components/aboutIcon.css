@@ -1,0 +1,14 @@
+.question {
+    position: relative;
+
+    .about-link {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+
+        .question-mark {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
